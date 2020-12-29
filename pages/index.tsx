@@ -1,5 +1,6 @@
 import tw from 'twin.macro'
-import { Button, Logo } from './../components'
+import { Button, Logo } from '../components'
+import { Header } from '../components/Header'
 
 const App = () => (
   <div
@@ -8,6 +9,7 @@ const App = () => (
       tw`bg-gradient-to-b from-electric to-ribbon`
     ]}
   >
+    <Header />
     <div tw="flex flex-col justify-center h-full space-y-5">
       <Button isPrimary>Submit</Button>
       <Button isSecondary>Cancel</Button>
